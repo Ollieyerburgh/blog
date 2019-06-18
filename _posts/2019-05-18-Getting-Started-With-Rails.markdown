@@ -54,15 +54,15 @@ Once RVM is installed, you must close and re open your terminal to refresh it.
 
 Use RVM to install the latest version of Ruby. As of writing, the [current recommended version][recommended-ruby-version] is version 2.6.3.
 ```
-rvm install 2.6.3
+$ rvm install 2.6.3
 ```
 Now you must specify to use that version by default
 ```
-rvm use 2.6.3 --default	
+$ rvm use 2.6.3 --default	
 ```
 To check whether the your Ruby version has been updated, run
 ```
-ruby -v
+$ ruby -v
 ```
 Once you have the latest version of Ruby installed, it’s suggested that you install Bundler. Bundler is a tool that makes it easy to manage gems within a Ruby project.
 ```
@@ -71,33 +71,33 @@ $ gem install bundler
 ### Installing Rails
 With Ruby installed through RVM and bundler installed, it's now time to install Rails.
 ```
-gem install rails
+$ gem install rails
 ```
 This will install the current stable version of Rails
 
 If you want an older version of Rails, run
 ```
-gem install rails –v 5.0.0
+$ gem install rails –v 5.0.0
 ```
 To check whether Rails is installed, run 
 ```
-rails -v
+$ rails -v
 ```
 Rails is now installed, and you’re ready to create your first Rails application.
 
 We’re going to name the rails project blog, but you can name it whatever you like.
 ```
-rails new blog
+$ rails new blog
 ```
 This will create an application called Blog in the blog directory. Now switch to the folder
 ```
-cd blog
+$ cd blog
 ```
 Now you’re in the directory in the terminal, open the directory in your favourite text editor. I use VS Code, which can be found [here][vscode].
 
 In most modern text editors, you can open the file structure by running a command
 ```
-code .
+$ code .
 ```
 You’ll see that Rails has automatically generated a series of files and folders. Most of the development work that you do will take place in the app/ folder. 
 
@@ -143,9 +143,6 @@ This will start a server running on localhost port 3000. To stop your Rails appl
 Hopefully everything has worked correctly, and you should see a lovely image notifying that you're on Rails.
 
 ![image](/assets/images/rails_welcome.png)
-
-That's it for this tutorial. In our next tutorial, we will find our how to create posts on our website.
-
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
